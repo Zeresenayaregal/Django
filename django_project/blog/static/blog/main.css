@@ -82,3 +82,11 @@ body {
   .account-heading {
     font-size: 2.5rem;
   }
+  .logout_form{
+    background-color: transparent;
+    color: white;
+    border: none; /* Border to make the button stand out */
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
