@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin # type: ignore
 from django.urls import path, include # type: ignore
 from django.contrib.auth import views as auth_views #type: ignore
+from django.conf import settings # type: ignore
+from django.conf.urls.static import static # type: ignore
 from users import views as user_views
 
 urlpatterns = [
@@ -27,3 +29,7 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path('', include('blog.urls')),
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # type: ignore
