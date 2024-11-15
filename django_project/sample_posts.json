@@ -1,0 +1,102 @@
+[
+    {
+        "title": "My Updated Post",
+        "content": "My first updated post!\n\nThis is exciting!",
+        "user_id": 1
+    },
+    {
+        "title": "A Second Post",
+        "content": "This is a post from a different user...",
+        "user_id": 2
+    },
+    {
+        "title": "Top 5 Programming Languages",
+        "content": "A discussion on popular programming languages.",
+        "user_id": 1
+    },
+    {
+        "title": "Sublime Text Tips and Tricks",
+        "content": "Some useful tips for using Sublime Text effectively.",
+        "user_id": 2
+    },
+    {
+        "title": "The Importance of Unit Testing",
+        "content": "Why every developer should consider unit testing.",
+        "user_id": 1
+    },
+    {
+        "title": "How to Learn Python",
+        "content": "A guide for beginners learning Python.",
+        "user_id": 2
+    },
+    {
+        "title": "My Travel to Japan",
+        "content": "Sharing my experiences from my Japan trip.",
+        "user_id": 1
+    },
+    {
+        "title": "Best Practices for Code Reviews",
+        "content": "How to conduct effective code reviews.",
+        "user_id": 2
+    },
+    {
+        "title": "Exploring Data Science",
+        "content": "An introduction to data science concepts.",
+        "user_id": 1
+    },
+    {
+        "title": "Healthy Work-Life Balance",
+        "content": "Tips on maintaining a work-life balance.",
+        "user_id": 2
+    },
+    {
+        "title": "Top 10 JavaScript Libraries",
+        "content": "An overview of popular JavaScript libraries.",
+        "user_id": 1
+    },
+    {
+        "title": "Mindfulness in Tech",
+        "content": "How mindfulness can benefit tech professionals.",
+        "user_id": 2
+    },
+    {
+        "title": "A Guide to Machine Learning",
+        "content": "Starting with machine learning fundamentals.",
+        "user_id": 1
+    },
+    {
+        "title": "Why Open Source Matters",
+        "content": "The value of open source contributions.",
+        "user_id": 2
+    },
+    {
+        "title": "Getting Started with Django",
+        "content": "A beginner's guide to Django development.",
+        "user_id": 1
+    },
+    {
+        "title": "Improving Your Git Workflow",
+        "content": "Tips for managing projects with Git.",
+        "user_id": 2
+    },
+    {
+        "title": "Introduction to Cloud Computing",
+        "content": "Basics of cloud computing and its benefits.",
+        "user_id": 1
+    },
+    {
+        "title": "My Favorite Coding Tools",
+        "content": "Sharing my favorite tools for coding.",
+        "user_id": 2
+    },
+    {
+        "title": "The Future of AI",
+        "content": "Exploring potential future developments in AI.",
+        "user_id": 1
+    },
+    {
+        "title": "Remote Work Productivity Tips",
+        "content": "How to stay productive while working remotely.",
+        "user_id": 2
+    }
+]
