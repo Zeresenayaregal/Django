@@ -21,6 +21,7 @@ class PostListView(ListView):
     template_name = 'blog/home.html' # The default format for the direction of the funtion is the following '<app>/<modelNmae>_<viewtype>.html'
     context_object_name = 'posts'
     ordering = ['-created_at']
+    paginate_by = 2
 
 class PostDetailView(DetailView):
     model = Post
