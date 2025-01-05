@@ -13,37 +13,54 @@
     {% if title %}
         <title> Django - {{title}}</title>
     {% else %}
-        <title>Django-Blog</title>
+        <title>Mini_Blog</title>
     {% endif %}
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-        <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Django Blog</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'blog-home' %}">Mini_Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarToggle">
-            <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
-              <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
-            </div>
-            <!-- Navbar Right Side -->
-            <div class="navbar-nav">
-              {% if user.is_authenticated %}
-                  <a class="nav-item nav-link" href="{% url 'post-create' %}">New Post</a>
-                  <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>                  
-                  <form method="post" action="{% url 'logout' %}">
-                    {% csrf_token %}
-                    <button class="logout_form" type="submit">Logout</button>
-                  </form>
-              {% else %}
-                  <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                  <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
-              {% endif %}
-            </div>
-          </div>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <!-- Navbar Left Side -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blog-home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blog-about' %}">About</a>
+            </li>
+          </ul>
+          
+          <!-- Navbar Right Side -->
+          <ul class="navbar-nav">
+            {% if user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'post-create' %}">New Post</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'profile' %}">Profile</a>
+              </li>
+              <li class="nav-item">
+                <form method="post" action="{% url 'logout' %}" class="d-inline">
+                  {% csrf_token %}
+                  <button type="submit" class="logout_form">Logout</button>
+                </form>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'register' %}">Register</a>
+              </li>
+            {% endif %}
+          </ul>
         </div>
+      </div>
       </nav>
     </header>
     <main role="main" class="container">
@@ -60,13 +77,12 @@
           </div>
           <div class="col-md-4">
             <div class="content-section">
-              <h3>Our Sidebar</h3>
-              <p class='text-muted'>You can put any information here you'd like.
+              <h3>Future functionalities</h3>
+              <p class='text-muted'> Sections to be added in the future
                 <ul class="list-group">
                   <li class="list-group-item list-group-item-light">Latest Posts</li>
                   <li class="list-group-item list-group-item-light">Announcements</li>
                   <li class="list-group-item list-group-item-light">Calendars</li>
-                  <li class="list-group-item list-group-item-light">etc</li>
                 </ul>
               </p>
             </div>
