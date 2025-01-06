@@ -11,15 +11,15 @@
     
 
     {% if title %}
-        <title> Django - {{title}}</title>
+        <title> Mini - {{title}}</title>
     {% else %}
-        <title>Mini_Blog</title>
+        <title>Mini-Blogger</title>
     {% endif %}
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="{% url 'blog-home' %}">Mini_Blog</a>
+        <a class="navbar-brand" href="{% url 'blog-home' %}">Mini-Blogger</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
